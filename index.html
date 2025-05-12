@@ -2,10 +2,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle Financeiro</title>
 </head>
 <body>
-    
+    <h2> Controle Financeiro </h2>
+    <form id="RecordForm">    
+            <input type="text" id="description" placeholder="Descrição" required>
+            <input type="number" id="value" placeholder="Valor" required>
+            <select id="type" required>
+                <option value="income">Entrada</option>
+                <option value="expense">Saída</option>
+            </select>
+            <button type="submit">Adicionar</button>
+    </form>
+        <h2> Lançamentos </h2>
+        <ul id="recordsList"></ul>
+
 </body>
 </html>
